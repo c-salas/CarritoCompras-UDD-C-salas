@@ -298,9 +298,8 @@ export const CatalogoMostrar = ({ nameState, updateNameState, userName, updateUs
             style={{ cursor: 'pointer' }}
             data-id={index}>
           </img>
-          {celda.nombre} <br/>
-          {celda.grupo}  <br/>
-          ${celda.precio.toLocaleString('es-ES',{style: 'decimal',minimumFractionDigits: 0, maximumFractionDigits: 0} )} - Stock {celda.stock} unidad(es)
+          {celda.Nombre} <br/>
+          ${celda.precio.toLocaleString('es-ES',{style: 'decimal',minimumFractionDigits: 0, maximumFractionDigits: 0} )} - Stock {celda.stock} un
           <br/>
           <div style={{paddingTop:"15px"}}></div>
           <button className='BtnCar1 p-2 rounded-2'
