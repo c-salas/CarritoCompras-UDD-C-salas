@@ -1,0 +1,38 @@
+.sesionContainer {
+    display: flex;
+    margin-top: 1%;
+}
+
+.iniciar_sesion {
+    text-align: left;
+    min-height: 70vh;
+    margin-right: 10%;
+
+}
+
+.regisFormLink {
+
+    text-align: center;
+    max-width: 500px;
+}
+
+
+
+.form-control {
+    max-width: 400px;
+}
+
+@media (max-width: 768px) {
+    .contenedor_500 {
+        margin-left: 10px; 
+        margin-right: 10px
+    }
+}
+
+.BtnCar3 {
+    cursor: pointer;
+    background-color: #000000;
+    color: aliceblue;
+    border: solid black;
+    border-radius: .5px;
+}

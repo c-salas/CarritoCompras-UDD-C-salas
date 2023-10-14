@@ -1,0 +1,12 @@
+.pagar_carro {
+min-height: 70vh;
+max-width: 1500px;
+}
+
+.containerShop1 {
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 0%;
+    max-width: 600px;
+}
+
