@@ -1,6 +1,6 @@
 # CarritoCompras-UDD-C-salas
 
-
+Proyecto comercio electronico utilizando tecnologias Html5/Css3, Nodejs, ExpresJs, ReactJS y MongoDB
 ![UDD5-3](https://github.com/c-salas/CarritoCompras-UDD-C-salas/assets/39786104/3e2333a7-80b7-4a07-80f2-d297a744fa77)
 ![UDD5-2](https://github.com/c-salas/CarritoCompras-UDD-C-salas/assets/39786104/6e562411-9267-4285-b045-ebb7b64ebe79)
 ![UDD5-1](https://github.com/c-salas/CarritoCompras-UDD-C-salas/assets/39786104/b6d07e5f-f9cf-4df1-83ad-43b8901c2e37)
