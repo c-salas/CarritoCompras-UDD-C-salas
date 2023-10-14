@@ -41,25 +41,6 @@ export const PagarCarro = ({ nameState, updateNameState, userName, updateUserNam
     const rutaActual   = '/pagarcarro'
     sessionStorage.setItem ('rutaActual', rutaActual)
 
-{/*    const leerUsuario = async () => {
-        // Si rut no existe en la localStorage entonces sale!
-        if (localStorage.getItem('rut') !== null) {
-            const rut        = localStorage.getItem ('rut')
-            const data       = JSON.parse (localStorage.getItem ('token'))
-            const urlUsuario = 'https://backend-proyecto-5-53yd.onrender.com/api/v1/users/' + rut
-            try 
-            {
-                const traeUsuario = await axios.get ( urlUsuario, { headers:  { authorization: data } } )
-                const datosUsuario = traeUsuario.data[0]
-                setUpdateForm ({...datosUsuario})
-            }
-            catch (error) 
-            {
-                console.log ('Salió por error', error)
-            }   
-        }
-    }
-*/}
 
     const leerUsuario = () => {
         if (localStorage.getItem('token') !== null) {
@@ -146,9 +127,7 @@ export const PagarCarro = ({ nameState, updateNameState, userName, updateUserNam
 
     const irAPagar = async (event) => {
         event.preventDefault()
-        // Debe revisar que todos los campos están OK, es decit, que todos los campos estén!!
-
-        if (enviaADomicilio || retiraEnTienda) {
+            if (enviaADomicilio || retiraEnTienda) {
             setEstado (true)
         } else {
             alert ('Debe seleccionar un tipo de despacho')
@@ -176,8 +155,8 @@ return (
     <div className="bs-warning-rgb" style={{borderRadius: "2%", color: "black", textAlign: "center"}}>
         <div className="container text-center">
             <br/>
-            <div className="row">
-                <div className="col col-md-auto" style={{textAlign: "left", width: "300px"}}>
+            <div className="rowContainer">
+                <div className="col col-md-auto" style={{textAlign: "left", width: "150px"}}>
                     <h4>Neto</h4>
                     <h4>IVA</h4>
                     <h4>SubTotal</h4>
@@ -204,7 +183,7 @@ return (
     <div className="containerShop1">
         <div className='container'>
         <br/>
-        <h4 style={{display: "flex", alignItems: "center", justifyContent: "center" }}>Información de envío</h4>
+        <h4 className='infoEnvio'>Información de envío</h4>
         <div style={{display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div className="row">
                 <div className="col col-auto" >

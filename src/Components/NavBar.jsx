@@ -18,8 +18,7 @@ export const NavBar = ({ nameState, updateNameState, userName, updateUserName, c
 
   console.log ('NAVBAR *** /// +++', rutaActual)
 
-  // Hay un problema cuando elimino la busqueda (botón X)... se mantiene el SEARCH (p.e. SANTANA)
-  const handleChange = (event) => {
+   const handleChange = (event) => {
     const nuevoValor = event.target.value;
     setBuscar(nuevoValor);
   };
@@ -68,7 +67,7 @@ export const NavBar = ({ nameState, updateNameState, userName, updateUserName, c
 
     localStorage.removeItem ('rut')
     localStorage.removeItem ('token')
-    dispatch({ type: 'LOGOUT'}) // No necesita enviar carga (no necesita el payload)
+    dispatch({ type: 'LOGOUT'}) 
     updateNameState (false)
   }
 
@@ -79,7 +78,7 @@ export const NavBar = ({ nameState, updateNameState, userName, updateUserName, c
 
   return (
     <>
-            <nav className="navbar navbar-expand-lg ">
+        <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
 
 

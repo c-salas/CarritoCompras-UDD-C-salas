@@ -57,3 +57,45 @@
     color: aliceblue;
 }
 
+
+@media (min-width: 1200px) {
+    .ver_carro {
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    .productpricing {
+        min-height: 400px;
+    
+    }
+}
+
+@media (max-width: 1199px) {
+    .ver_carro {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ver_carro {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .ver_carro {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    .catalogo_carro {
+        display: grid;
+        margin-left: 0;
+        margin-right: 50%;
+        padding: none;
+        text-align: left;
+        height: 400px;
+    }
+    .row {
+        display: grid;
+    }
+    
+}

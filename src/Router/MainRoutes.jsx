@@ -12,18 +12,7 @@ export const MainRoutes = ({ nameState, updateNameState, userName, updateUserNam
   console.log  ('MAINROUTES *** /// +++')
   return (
     <Routes>
-      <Route path='/' element={<Portada                     nameState={nameState} 
-                                                            updateNameState={updateNameState}
-                                                            userName={userName} 
-                                                            updateUserName={updateUserName}
-                                                            cartState = {cartState}
-                                                            updateCartState = {updateCartState}
-                                                            userCart = {userCart}
-                                                            updateUserCart = {updateUserCart}
-                                                            />} />
-
-
-      <Route path='/catalogomostrar/' element={<CatalogoMostrar  nameState={nameState} 
+      <Route path='/' element={<Portada                                 nameState={nameState} 
                                                                         updateNameState={updateNameState}
                                                                         userName={userName} 
                                                                         updateUserName={updateUserName}
@@ -32,54 +21,65 @@ export const MainRoutes = ({ nameState, updateNameState, userName, updateUserNam
                                                                         userCart = {userCart}
                                                                         updateUserCart = {updateUserCart}
                                                                         />} />
-      <Route path='/vercarro' element={<VerCarro            nameState={nameState} 
-                                                            updateNameState={updateNameState}
-                                                            userName={userName} 
-                                                            updateUserName={updateUserName}
-                                                            cartState = {cartState}
-                                                            updateCartState = {updateCartState}
-                                                            userCart = {userCart}
-                                                            updateUserCart = {updateUserCart}
-                                                            />} />
 
-      <Route path='/pagarcarro' element={<PagarCarro        nameState={nameState} 
-                                                            updateNameState={updateNameState}
-                                                            userName={userName} 
-                                                            updateUserName={updateUserName}
-                                                            cartState = {cartState}
-                                                            updateCartState = {updateCartState}
-                                                            userCart = {userCart}
-                                                            updateUserCart = {updateUserCart}
-                                                            />} />
 
-      <Route path='/exito' element={<Exito                  nameState={nameState} 
-                                                            updateNameState={updateNameState}
-                                                            userName={userName} 
-                                                            updateUserName={updateUserName}
-                                                            cartState = {cartState}
-                                                            updateCartState = {updateCartState}
-                                                            userCart = {userCart}
-                                                            updateUserCart = {updateUserCart}
-                                                            />} /> 
+      <Route path='/catalogomostrar/' element={<CatalogoMostrar         nameState={nameState} 
+                                                                        updateNameState={updateNameState}
+                                                                        userName={userName} 
+                                                                        updateUserName={updateUserName}
+                                                                        cartState = {cartState}
+                                                                        updateCartState = {updateCartState}
+                                                                        userCart = {userCart}
+                                                                        updateUserCart = {updateUserCart}
+                                                                        />} />
+      <Route path='/vercarro' element={<VerCarro                        nameState={nameState} 
+                                                                        updateNameState={updateNameState}
+                                                                        userName={userName} 
+                                                                        updateUserName={updateUserName}
+                                                                        cartState = {cartState}
+                                                                        updateCartState = {updateCartState}
+                                                                        userCart = {userCart}
+                                                                        updateUserCart = {updateUserCart}
+                                                                        />} />
 
-      <Route path='/iniciarsesion' element= {<IniciarSesion nameState={nameState} 
-                                                            updateNameState={updateNameState}
-                                                            userName={userName} 
-                                                            updateUserName={updateUserName}
-                                                            cartState = {cartState}
-                                                            updateCartState = {updateCartState}
-                                                            userCart = {userCart}
-                                                            updateUserCart = {updateUserCart}
-                                                            />} />
-      <Route path='/crearcuenta' element={<CrearCuenta      nameState={nameState} 
-                                                            updateNameState={updateNameState}
-                                                            userName={userName} 
-                                                            updateUserName={updateUserName}
-                                                            cartState = {cartState}
-                                                            updateCartState = {updateCartState}
-                                                            userCart = {userCart}
-                                                            updateUserCart = {updateUserCart}
-                                                            />} />
+      <Route path='/pagarcarro' element={<PagarCarro                    nameState={nameState} 
+                                                                        updateNameState={updateNameState}
+                                                                        userName={userName} 
+                                                                        updateUserName={updateUserName}
+                                                                        cartState = {cartState}
+                                                                        updateCartState = {updateCartState}
+                                                                        userCart = {userCart}
+                                                                        updateUserCart = {updateUserCart}
+                                                                        />} />
+
+      <Route path='/exito' element={<Exito                              nameState={nameState} 
+                                                                        updateNameState={updateNameState}
+                                                                        userName={userName} 
+                                                                        updateUserName={updateUserName}
+                                                                        cartState = {cartState}
+                                                                        updateCartState = {updateCartState}
+                                                                        userCart = {userCart}
+                                                                        updateUserCart = {updateUserCart}
+                                                                        />} /> 
+
+      <Route path='/iniciarsesion' element= {<IniciarSesion             nameState={nameState} 
+                                                                        updateNameState={updateNameState}
+                                                                        userName={userName} 
+                                                                        updateUserName={updateUserName}
+                                                                        cartState = {cartState}
+                                                                        updateCartState = {updateCartState}
+                                                                        userCart = {userCart}
+                                                                        updateUserCart = {updateUserCart}
+                                                                        />} />
+      <Route path='/crearcuenta' element={<CrearCuenta                  nameState={nameState} 
+                                                                        updateNameState={updateNameState}
+                                                                        userName={userName} 
+                                                                        updateUserName={updateUserName}
+                                                                        cartState = {cartState}
+                                                                        updateCartState = {updateCartState}
+                                                                        userCart = {userCart}
+                                                                        updateUserCart = {updateUserCart}
+                                                                        />} />
       <Route path='*' element={<h1>Not Found</h1>} />
     </Routes>
   );

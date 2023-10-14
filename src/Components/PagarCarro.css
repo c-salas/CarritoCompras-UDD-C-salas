@@ -10,3 +10,57 @@ max-width: 1500px;
     max-width: 600px;
 }
 
+.infoEnvio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rowContainer {
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+@media (max-width: 1199px) {
+    .pagar_carro {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .pagar_carro {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .pagar_carro {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        text-align: left;
+    }
+    .containerShop1 {
+        margin-left: none;
+        align-items: center;
+        text-align: center;
+        max-width: auto;
+    }
+
+    .containerShop1 {
+        text-align: left;
+
+    }
+
+    .infoEnvio {
+
+        justify-content: left;
+    }
+
+    .form-control {
+        max-width: 300px;
+    }
+
+    .rowContainer {
+        grid-template-columns: 100px 100px;
+    }
+    
+}

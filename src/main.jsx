@@ -5,8 +5,7 @@ import { HomePage }  from './Pages/HomePage.jsx'
 import { UserProvider } from './Context/userProvider.jsx'
 import { ProductProvider } from './Context/productProvider.jsx'
 
-// Defino los parámetros iniciales
-  const rutaActual = '/'
+const rutaActual = '/'
   sessionStorage.setItem('rutaActual', rutaActual);
 
   const rutaCatalogo = '/'
@@ -27,7 +26,7 @@ import { ProductProvider } from './Context/productProvider.jsx'
   console.log ('MAIN *** /// +++')
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  //<React.StrictMode>
+
 
   <UserProvider>
     <ProductProvider>
@@ -39,5 +38,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </ProductProvider>
   </UserProvider>
 
-  //</React.StrictMode>,
+
 )

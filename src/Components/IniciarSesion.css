@@ -16,7 +16,13 @@
     max-width: 500px;
 }
 
-
+.BtnCar3 {
+    cursor: pointer;
+    background-color: #000000;
+    color: aliceblue;
+    border: solid black;
+    border-radius: .5px;
+}
 
 .form-control {
     max-width: 400px;
@@ -27,12 +33,38 @@
         margin-left: 10px; 
         margin-right: 10px
     }
+
+    .sesionContainer {
+        display: grid;
+        margin: 2%;
+    }
+
+    .container {
+        margin-left: 2px;
+    }
+
+    .iniciar_sesion {
+        align-items: left;
+    }
+
+    .regisFormLink {
+        display: grid;
+        align-items: center;
+
+        
+    }
+
+    .gatoLindo {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .textCreateAcount {
+        font-size: 12px;
+    }
+
+    .BtnCar1 {
+        font-size: 15px;
+        max-height: 50px;
+    }
 }
 
-.BtnCar3 {
-    cursor: pointer;
-    background-color: #000000;
-    color: aliceblue;
-    border: solid black;
-    border-radius: .5px;
-}

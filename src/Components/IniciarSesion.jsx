@@ -60,12 +60,7 @@ export const IniciarSesion = ({ nameState, updateNameState, userName, updateUser
 
             const rut = decoded.data.rut
             localStorage.setItem ('rut', rut)
-{/*
-            const urlUsuario = 'https://backend-proyecto-5-53yd.onrender.com/api/v1/users/' + rut
-            const traeUsuario = await axios.get ( urlUsuario, { headers: { authorization: data } } )
-            const datosUsuario = traeUsuario.data[0]
-            sessionStorage.setItem ('datosUsuario', datosUsuario)
-            console.log (traeUsuario.data[0]) */}
+
         }
         catch {
             setEspera (false)
@@ -123,7 +118,6 @@ export const IniciarSesion = ({ nameState, updateNameState, userName, updateUser
 
         <br/>
 
-        {/* <!-- Modal --> */}
         <div className="modal fade" id="exampleModal"  tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog">
                 <div className="modal-content">
@@ -164,9 +158,9 @@ export const IniciarSesion = ({ nameState, updateNameState, userName, updateUser
 
     </div>
     <div className='regisFormLink'>
-    <center><img height={300} src="assets/images/gatob.jpg" alt="logo"  /></center>
+    <center><img className='gatoLindo' height={300} src="assets/images/gatob.jpg" alt="logo"  /></center>
         <a href="/crearcuenta" className="BtnCar1 p-2 rounded-2 " >Registrarme</a>
-        <h4>Si es la primera vez que visitas la tienda, por favor regístrate haciendo click en el botón</h4>
+        <h4 className='textCreateAcount'>Si es la primera vez que visitas la tienda, por favor regístrate haciendo click en el botón</h4>
     </div>
     </div>
     )

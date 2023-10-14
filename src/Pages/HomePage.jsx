@@ -11,26 +11,25 @@ import './HomePage.css'
 export const HomePage = () => {
   console.log ('HOMEPAGE *** /// +++')
 
-  // Defino un estado que pueda ser modificado por NavBar
   const [nameState, setNameState] = useState(false);
   const [userName, setUserName] = useState ('')
 
   const [cartState, setCartState] = useState (false)
   const [userCart, setUserCart] = useState (0)
 
-  // Defino funciones para actualizar el estado del inicio de sesión
+
   const updateNameState = (nuevoEstado) => {
         setNameState(nuevoEstado) }
   const updateUserName = (nuevoValor) => {
         setUserName(nuevoValor) }
 
-  // Defino funciones para actualizar el estado del carro de compras
+
   const updateCartState = (nuevoEstado) => {
         setCartState (nuevoEstado) }
   const updateUserCart = (nuevoValor) => {
         setUserCart (nuevoValor) }
 
-  // Cargo los productos desde la base de datos
+
   const [,dispatch] = useContext (ProductContext)
 
   const getAllProducts = async () => {

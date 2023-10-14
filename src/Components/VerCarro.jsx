@@ -140,8 +140,7 @@ export const VerCarro = ({ nameState, updateNameState, userName, updateUserName,
 
     const irAPagar = (event) => {
         event.preventDefault();
-        // const verificaLogin = nameState
-        // Si carro está vacío NO HAY QUE IR A PAGAR
+
         if (cartState == false || userCart == 0) {
             alert ('Carro está vacío')
         } else {
@@ -156,28 +155,28 @@ export const VerCarro = ({ nameState, updateNameState, userName, updateUserName,
 
            <br />
             <div className="container" >
-            <div className='flex' style={{marginLeft: "0px", marginRight: "0px"}} >
-                {totalCarro.map ((celda, index) => (
-                <div className="catalogo_carro" style={{backgroundColor: "white"}} key={index}>
-                    <div className='productcard'>
-                        <img data-id={index} src={productos[celda.codigo-1].url} width={100}> 
-                        </img> <br/> <br/>
-                        <button className= 'BtnCar1 p-2 rounded-2' style={{ width: "40px", fontSize: "14px", marginRight: "1rem"}} onClick={(event) => restaUno (event, index)}> - </button>
-                        {celda.cantidad}
-                        <button className= 'BtnCar1 p-2 rounded-2' style={{ width: "40px", fontSize: "14px", marginLeft: "1rem"}} onClick={(event) => sumarUno (event, index)}> + </button> 
-                    </div>
-                    <br/>
-                    <div className='productpricing'>
-                        {productos[celda.codigo-1].Nombre} <br/>
-                        ${celda.subTotal.toLocaleString('es-ES',{style: 'decimal',minimumFractionDigits: 0, maximumFractionDigits: 0} )} &nbsp;&nbsp;
-                        <a style={{ cursor: 'pointer' }} onClick={(event) => eliminaProduct (event, index)}>🗑️</a>
-                    </div>
-                    
+                <div className='flex' style={{marginLeft: "0px", marginRight: "0px"}} >
+                    {totalCarro.map ((celda, index) => (
+                    <div className="catalogo_carro" style={{backgroundColor: "white"}} key={index}>
+                        <div className='productcard'>
+                            <img data-id={index} src={productos[celda.codigo-1].url} width={100}> 
+                            </img> <br/> <br/>
+                            <button className= 'BtnCar1 p-2 rounded-2' style={{ width: "40px", fontSize: "14px", marginRight: "1rem"}} onClick={(event) => restaUno (event, index)}> - </button>
+                            {celda.cantidad}
+                            <button className= 'BtnCar1 p-2 rounded-2' style={{ width: "40px", fontSize: "14px", marginLeft: "1rem"}} onClick={(event) => sumarUno (event, index)}> + </button> 
+                        </div>
+                        <br/>
+                        <div className='productpricing'>
+                            {productos[celda.codigo-1].Nombre} <br/>
+                            ${celda.subTotal.toLocaleString('es-ES',{style: 'decimal',minimumFractionDigits: 0, maximumFractionDigits: 0} )} &nbsp;&nbsp;
+                            <a style={{ cursor: 'pointer' }} onClick={(event) => eliminaProduct (event, index)}>🗑️</a>
+                        </div>
+                        
 
-                </div>
-                ))}
-                <br /><br />
-            </div> <br />
+                    </div>
+                    ))}
+                    <br /><br />
+                </div> <br />
             </div>
             <br />
             <div className="container">
